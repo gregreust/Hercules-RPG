@@ -1,19 +1,19 @@
 hercules_attacks = {
     #attack name : power, how many attacks available 
-    'sword':['power', 'how many']
-    'shield':[]
-    'kick':[]
-    'defend':[]
+    'sword':[10,4];
+    'shield bash':[6,6];
+    'kick':[5,8];
+    'defend':[0,20];
 }
 
 hercules_health = 100
 
 lion_attacks = {
     #attack name : power, how many attacks available 
-    'sword':['power', 'how many']
-    'shield':[]
-    'kick':[]
-    'defend':[]
+    'bite':[10,4]
+    'claw':[5,8]
+    'pounce':[8, 5]
+    'defend':[0, 20]
 }
 
 lion_health = 15
@@ -26,7 +26,7 @@ hydra_attacks : {
     'defend':[]
 }
 
-hyrda_health = 30
+hyrda_health = 20
 
 cerberus_attacks = {
     #attack name : power, how many attacks available 
@@ -36,7 +36,7 @@ cerberus_attacks = {
     'defend':[]
 }
 
-ceberus_health = 50
+ceberus_health = 40
 
 def intro():
     print('Greetings, Hercules! \n You have been tasked by the king to complete a quest.')
@@ -48,8 +48,29 @@ def intro():
         else:
             print('Are you sure? Enter y to continue, or you may leave in dishonor')
 
+
+def attack():
+    user_attack = input('Which move will you choose? \n1. Sword Attack \n2. Sheild Bash \n3. Kick \n4.Defend Yourself')
+
+def enemy_attack(enemy_attacks):
+    chosen_move = 
+
+def is_alive(health_int):
+    if health_int <= 0:
+        return False
+    else:
+        return True
+
 def battle(enemy_name, enemy_attacks, enemy_health):
     print(f'You see the {enemy_name} approaching up ahead. Get ready to fight!')
+    while hercules_health > 0 and enemy_health > 0:
+        attack():
+        enemy_attack(enemy_attacks):
+    #loop until someone dies
+
+def end_game():
+
+    pass
     
 
 
